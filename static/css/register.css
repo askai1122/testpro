@@ -1,0 +1,182 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background:url(../images/bc.jpeg)  no-repeat center fixed;
+
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-cont/ent: center;*/
+    /*align-items: center;*/
+    /*background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);*/
+
+}
+
+
+
+#id_first_name{
+  border:0;
+  background: yellow;
+  display: block;
+  margin-right: 1%;
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px 70px;
+  width: 18%;
+  font-size: 100%;
+  font:italic;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  font:bold;
+  font-size:130%;
+  float: right;
+}
+.bas3
+{
+  font-size: 300%;
+  /*padding: 4%;*/
+  color: #00FF00;
+  font:bold;
+
+}
+
+.bas4{
+  font:cursive;
+}
+#id_last_name{
+  border:0;
+  background: pink;
+  display: block;
+  text-align: center;
+  border: 2px solid red;
+  padding: 16px 70px;
+  width: 18%;
+  font-size: 100%;
+  font:italic;
+  outline: none;
+  color: black;
+  float: right;
+  margin-right: 7%;
+  border-radius: 24px;
+  transition: 0.25s;
+  /*margin-top:3%;*/
+  margin-bottom: 10%; 
+  font:bold;
+  /*float: top;*/
+  font-size:130%;
+}
+
+
+#id_user_name{
+  border:0;
+  /*float: right;*/
+  background: #00FF00;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px 70px;
+  width: 18%;
+  font-size: 100%;
+  font:italic;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  /*margin-top:3%; */
+  margin-bottom: 8%;
+  font:bold;
+  font-size:130%;
+}
+
+#id_email{
+  border:0;
+  background: blue;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px 70px;
+  width: 18%;
+  float: right;
+  font-size: 100%;
+  font:italic;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  /*margin-top: 1%;*/
+  /*margin-bottom: 10%;*/
+  font:bold;
+  margin-left: 25%;
+  font-size:130%;
+  /*width: 25%;*/
+}
+#id_password{
+  border:0;
+  background: white;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px 70px;
+  width: 18%;
+  font-size: 100%;
+  font:italic;
+  outline: none;
+  color: black;
+  margin-bottom: 2%;
+  border-radius: 24px;
+  transition: 0.25s;
+  margin-top: 3%;
+  font:bold;
+  font-size:130%;
+}
+.askari2 label:nth-child(1){
+  display: none;
+}
+/*bUTTON SING UP CSS*/
+.errorlist{
+  width: 27%;
+  color: black;
+  background-color: red;
+  border-radius: 20px;
+  padding: 1%;
+  font-family: inherit;
+  font-size:130%;
+
+
+
+
+}
+
+.submit
+{
+  border:0;
+  background: #00FF00;
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px 70px;
+  width: 18%;
+  font-size: 100%;
+  /*font:italic;*/
+  cursor: pointer;
+  outline: none;
+  color: black;
+  /*background-color: pink;*/
+  border-radius: 24px;
+  font:bold;
+  margin-top: 4%;
+  font:bold;
+  font-size:120%;
+}
+
+#id_uploadprofile{
+  background-color: red;
+  margin-top: 2%;
+  font:bold;
+
+
+}

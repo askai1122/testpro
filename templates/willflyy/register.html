@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<!-- <html lang="en"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+<html>
+<head>
+    <title>Register your account</title>
+</head>
+<body>
+<div class="jumbotron">
+    {% if registered %}
+    <h1> Thank you</h1>
+    {% endif %}
+</div>
+<form method="POST" enctype="multipart/form-data" class="askari2">
+    <center><h1 class="bas3"> Will Fly</h1>
+    <center><h1 class="bas4"> Create Your Account Today</h1>
+
+
+    </center>
+    {% csrf_token %}
+    <center>{{ form.as_p }}</center>
+    
+    <center><button type="submit" class="submit " value="Register">Sign up</button>
+    </center>
+</button>
+</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#id_uploadprofile').removeAttr('required');
+    });
+</script>
+</body>
+</html>

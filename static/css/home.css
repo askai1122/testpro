@@ -1,0 +1,208 @@
+body {
+ margin: 0;
+ padding: 0;
+background: linear-gradient(to bottom left, #ffff66 0%, #66ff99 100%)
+}
+.ss{
+  background-color:orange;
+}
+.buscar-caja {
+ position: absolute;
+ top: 5%;
+ /*margin-right:50px;*/
+ left: 50%;
+ transform: translate(-40%, -50%);
+ background: white;
+ height: 40px;
+
+ border-radius: 30px;
+ padding: 9px;
+}
+
+.buscar-caja:hover > .buscar-txt {
+ width: 560px;
+  /*margin-right:50px;*/
+
+ padding: 0 8px;
+}
+
+.buscar-caja:hover > .buscar-btn {
+ background: none;
+ color: red;
+}
+
+.buscar-btn {
+ color: orange;
+ float: right;
+ width: 60px;
+ height: 35px;
+ border-radius: 20%;
+ background: none;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: black;
+ cursor: pointer;
+ font:bolder;
+}
+.text
+{  font:bolder;
+
+}
+
+.buscar-btn > i {
+ font-size: 20px;
+}
+ 
+
+.buscar-txt {
+ border: orange;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: black;
+ font-size: 35px;
+ transition: 0.5s;
+ line-height: 40px;
+ width: 0px;
+}
+.topnav {
+  background: linear-gradient(to left, #ffff66 0%, #ff66cc 100%);
+  overflow: hidden;
+  border-color: black;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 23px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.container
+{
+  /*background-color: pink;*/
+  /*margin-left: 10%;*/
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+  float: left;
+}
+.topnav a.p1{
+  color: white ;
+  float: left;
+  margin-left: 74%;
+}
+.main_button
+{
+  border:0;
+  background: none;
+  display: block;
+  margin: 17px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 16px 30px;
+  width: 12%;
+  /*font-size: 100%;*/
+  font:italic;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+#id_first_name{
+  display: none;
+}
+.errorlist{
+  width: 10%;
+  margin-left: 15%;
+}
+
+.main_1
+{
+  color:black;
+/*  margin-right: 10%;
+  margin-left: 25%;*/
+}
+.text_1
+{
+    /*padding: 20%;*/
+  /*border-radius: 2%;*/
+  color: red;
+  background-color: white;
+  font:italic;
+  border-color: red;
+
+
+  font-size:150%;
+  border-radius: 24px;
+  /*margin-top:10%;*/
+  /*background: linear-gradient(to right, #00ff00 0%, #66ccff 100%);*/
+ 
+  /*position:center;*/
+
+
+}
+.div_post_submit
+{
+  margin-left:43%;
+  margin-top: 1%;
+
+}
+.div_post_file
+{
+  margin-left:33%;
+  margin-bottom: 12%;
+}
+
+.askari
+{
+  font-size:80%;
+  text-align: 10%;
+}
+
+
+.askari2
+{
+  border-color: pink;
+  border-radius: 10%;
+  border-radius:15px;
+  border:10%;
+  padding: 8px;
+  width:10%;
+  margin-bottom: 1%;
+  margin-left: 32%;
+  background-color: red;
+  color:white;
+  border-color:blue;
+  cursor:pointer;
+}
+
+.submit3{
+  border-color: pink;
+  border-radius: 10%;
+  border-radius:15px;
+  border:10%;
+  padding: 1%;
+  margin-left: 26%;
+  width:10%;
+  font:bold;
+  border-color:black;
+  background-color:red;
+  color:black;
+  cursor:pointer;
+}

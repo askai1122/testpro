@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/testing.css' %}">
+
+
+</head>
+<body>
+<form>
+	<div class="headings">
+		<center><h3>Item Information <span>(The fields in red are required)</span></h3>
+		
+		</center>
+		
+	</div>
+
+	<div class="mainRoom">
+		<div class="room1">
+			<div class="form-div">
+				<label>Item Number: &nbsp</label>	
+				<input type="text" name="">	
+			</div>	
+			<div class="form-div">
+				<label>Barcode: &nbsp  &nbsp  &nbsp &nbsp &nbsp</label>	
+				<input type="text" name="">
+			</div>
+			<div class="form-div">
+				<label>Product Code:&nbsp</label>	
+				<input type="text" name="">
+			</div>
+			<div class="form-div">
+				<label>Category: &nbsp&nbsp &nbsp &nbsp&nbsp</label>	
+				<input type="text" name="">
+			</div>
+			<div class="form-div">
+				<label>Unit: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>	
+				<input type="text" name="">
+			</div>			
+		</div>
+		<div class="room2">
+			<div class="form-div">
+				<label>Cost Price: &nbsp &nbsp &nbsp &nbsp </label>	
+				<input type="text" name="">	
+			</div>
+			
+			<div class="form-div">
+				<label>Sell Price: &nbsp &nbsp &nbsp &nbsp &nbsp</label>	
+				<input type="text" name="">
+			</div>	
+		<div class="form-div">
+				<label>initial quantity:&nbsp&nbsp</label>	
+				<input type="text" name="">	
+		</div>
+		<div class="form-div">
+				<label>Quality on Hand:</label>	
+				<input type="text" name="">	
+		</div>
+		<div class="form-div">
+				<label>Item Pic: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>	
+				<input type="file" name="">	
+		</div>
+		<div class="form-div">
+				<label>Item Location: &nbsp &nbsp </label>	
+				<input type="text" name="">	
+		</div>
+	</div>
+<a class="waves-effect waves-light btn red" href="{% url 'logout' %}">Logout !!</a>
+
+</div>
+<br>
+	<center><input class=".btn" type="submit" name="Submit"></center>
+	
+</div>
+</form>
+	
+
+
+</body>
+</html>

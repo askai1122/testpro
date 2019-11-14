@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th> Site Names</th>
+				<th>Date</th>
+				<th>id</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			{% if access_record %}
+
+			{% for acc in access_record %}
+
+			<tr>
+				<td>{{ acc.name }}</td>
+				<td>{{ acc.date }}</td>
+				<td>{{ acc.id }}</td>
+				<td>{{ acc.top_name }}</td>
+			</tr>
+			{% endfor %}
+			{% else %}
+			<tr>
+				<td colspan="2"> No data Found </td>
+			</tr>
+			{%endif%}
+		</tbody>
+	</table>
+	<table>
+		<thead>
+			<tr>
+				<th> Webpages Name</th>
+				<!-- <th>Date</th> -->
+				<!-- <th>id</th> -->
+
+			</tr>
+		</thead>
+		<tbody>
+			{% if webpage %}
+
+			{% for wb in webpage %}
+
+			<tr>
+				<td>{{ wb.name }}</td>
+				<td>{{ wb.topic_id }}</td>
+				<td>{{ wb.url }}</td>
+			</tr>
+			{% endfor %}
+			{% else %}
+			<tr>
+				<td colspan="2"> No data Found </td>
+			</tr>
+			{%endif%}
+		</tbody>
+	</table>
+</body>
+</html>

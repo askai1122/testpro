@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'willflyy/base.html' %}
+{% block body_block %}
+
+<html>
+
+<body>
+
+<form form method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	   
+
+		
+	<br>
+	<center><input type="text" name="status" class="text_1"  placeholder="Update Your Status here" style="margin: 0px; width: 485px; height: 174px;">
+	   
+	</center>
+	<br>
+	<button class="askari2" id="files" onclick="document.getElementById('file').click();return false;">Photo / Video</button>
+	<input type="file" style="visibility:hidden"; accept="image" name="images"  id="file"/>
+    <br>
+	    
+	<center><input class="submit3" type="submit" value="POST" />
+	</center>
+</form>
+
+
+{% endblock %}
+
+</body>
+</html>

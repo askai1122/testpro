@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "willflyy/base.html" %}
+{% block body_block %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<form method="POST" enctype="multipart/form-data" class="askari2">
+    <center><h1 class="bas3"> Will Fly</h1>
+    </center>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <center><button type="submit" class="submit" value="Register">Sign up</button>
+    </center>
+</form>
+{% endblock %}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Will Fly</title>
+<body>
+    <hgroup>
+        <!-- <h1 class="p1">Verify It's You !!</h1> -->
+        {% if error %}
+        <h1>{{ error }}</h1>
+        {% endif %}
+    </hgroup>
+
+    <form class="box" method="POST" action="{% url 'login' %}">
+
+          {% csrf_token %} 
+        <p>Login</p>
+
+        <div class="group">
+            <input type="text" name="username" placeholder="Username"><span class="highlight"></span><span class="bar"></span>
+            <br>
+            
+        </div>
+        <div class="group">
+            <input type="password" placeholder="Password" name="password"><span class="highlight"></span><span class="bar"></span>
+        </div>
+        <button class="glow-on-hover"  type="submit" class="button buttonBlue">Login 
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+<a href="{% url 'register' %}">Create An Account </a> 
+
+    </form>
+    
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َWill Fly</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+<hgroup>
+    <h1>Create A New Account</h1>
+    {% if error %}
+    <h4>{{ error }}</h4>
+    {% endif %}
+</hgroup>
+<form class="box"  method="POST">
+  {% csrf_token %}
+
+  <p>Login</p>
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="Password">
+  <button class="glow-on-hover" type="submit" >Login</button>
+  <br>
+  <a href="register" class="animated-button1">Sign Up
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  </a>
+<!--   <label< class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Sign Up
+  </label> -->
+
+</a>
+</form>
+
+
+
+  </body>
+</html>
+ -->

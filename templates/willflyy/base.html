@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="">
+<html>
+<head>
+	<title></title>
+</head>
+ <div class="topnav">
+  <a class="active" href="secondpage">Home <i class="fa fa-home" ></i>
+  </a>
+  <a href="thirdpage">Contact</a>
+  <!-- <a class="p1" >Logout </a> -->
+<!-- <body>
+{% block body_block %}
+{% endblock %}
+</body>
+<footer>blah blah blah blah blah </footer>
+</html> --> 
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<html>
+<head>
+	<title>Will Fly</title>
+</head>
+<body>
+
+
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <title>Will Fly</title>
+ </head>
+ <body>
+ <div class="topnav">
+
+  <a class="active" href="#home">Home <i class="fa fa-home" aria-hidden="true"></i>
+  </a>
+
+  <div>
+  <a href="contactus">Contact</a>
+
+  </div>
+  <a class="p1" href="{% url 'logout' %}">Logout <i class="fa fa-sign-out" aria-hidden="true"></i>
+  </a>
+
+</div>
+
+</div>
+
+	<div class="buscar-caja">
+
+	<input type="text" name="" class="buscar-txt" placeholder="Search"/>
+	<a class="buscar-btn">
+    <i class="fa fa-search" aria-hidden="true">
+    
+    </i>
+
+	</a>
+	</div>
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  /*width: 10%;*/
+  /*padding: 10%;*/
+  text-align: center;
+  color: black;
+  /*background-color: lightblue;*/
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="myDIV" >
+<center><h1 class="main_1"> بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h1></center>
+</div>
+
+<br>
+<center><button class="main_button" onclick="myFunction()">Show/Hide</button>
+</center>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+ </div>
+  	
+	   
+
+
+
+	</div>
+ </div>
+<a href="myprofile" style="background-color: None; color:black; padding: 1%; font-size: 200%; margin-left: 3%; margin-bottom: 10%; font: bold;">@{{user.first_name}} {{user.last_name}}</a>
+
+	</a>
+
+
+
+<div class="div_post_file">
+
+	<br>
+  
+	</div>
+		<img src="%{ media.profiles.image.url }%">
+
+    <div class="content-section">
+      <div class="media">
+        
+        <div class="media-body">
+          <h2 class="account-heading">{{ user.username }}</h2>
+          <p class="text-secondary">{{ user.email }}</p>
+          {{ user.image.url}}
+        </div>
+      </div>
+      <!-- FORM HERE -->
+    </div>
+ </body>
+
+</html>
